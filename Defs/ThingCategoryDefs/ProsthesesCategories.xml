@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!--Prostheses-->
+  
+  <ThingCategoryDef>
+    <defName>SimpleProstheses</defName>
+    <label>simple prostheses</label>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>BionicProstheses</defName>
+    <label>bionics</label>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>AdvancedProstheses</defName>
+    <label>advanced bionics</label>
+  </ThingCategoryDef>
+  
+<!--Organs and implants-->
+
+  <ThingCategoryDef>
+    <defName>SyntheticOrgans</defName>
+    <label>synthetic organs</label>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>BrainImplants</defName>
+    <label>brain implants</label>
+  </ThingCategoryDef>
+  
+</Defs>

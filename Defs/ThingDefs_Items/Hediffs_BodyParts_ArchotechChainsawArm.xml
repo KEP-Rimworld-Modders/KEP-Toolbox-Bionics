@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Defs>
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>KEP_ArchotechChainsawArm</defName>
+    <label>archotech chainsaw arm</label>
+    <labelNoun>an archotech chainsaw arm</labelNoun>
+    <description>An installed archotech chainsaw arm.</description>
+    <descriptionHyperlinks><ThingDef>KEP_ArchotechChainsawArm</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>KEP_ArchotechChainsawArm</spawnThingOnRemoved>
+    <addedPartProps>
+	  <partEfficiency>1.10</partEfficiency>
+      <solid>true</solid>
+	  <isGoodWeapon>true</isGoodWeapon>
+    </addedPartProps>
+			 <comps>
+         <li Class="HediffCompProperties_VerbGiver">
+            <tools>
+          <li>
+            <label>chainsaw slash</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>20</power>
+            <cooldownTime>0.9</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+          </li>
+        </tools>
+         </li>
+      </comps>
+    <stages>
+      <li>
+        <statOffsets>
+      <PlantWorkSpeed>0.90</PlantWorkSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+	<ThingDef Name="KEP_BASEArchotechChainsawArm" ParentName="BodyPartModBase" Abstract="True">
+	    <techLevel>Archotech</techLevel>
+		<tradeTags>
+			<li>AdvancedProstheses</li>
+		</tradeTags>
+		<thingCategories>
+			<li>BodyPartsArchotech</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+
+  <ThingDef ParentName="KEP_BASEArchotechChainsawArm">
+    <defName>KEP_ArchotechChainsawArm</defName>
+    <label>archotech chainsaw arm</label>
+    <description>A archotech compound infused battle-saw with a life-like hand that seems to turn into a deadly melee weapon at a split second. Living up to the glory of its predecessor, this one is especially amazing with plant cutting. Truly a deadly replacement to such a fragile limb.</description>
+	<graphicData>
+			<texPath>Things/Item/BodyPart/Archotech_Chainsaw_arm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <descriptionHyperlinks><RecipeDef>KEP_InstallArchotechChainsawArm</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>60</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>0.3</Mass>
+	        <MarketValue>2400</MarketValue>
+    </statBases>
+	    <techHediffsTags>
+      <li>Archotech</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>KEP_InstallArchotechChainsawArm</defName>
+    <label>install archotech chainsaw arm</label>
+    <description>Install an archotech chainsaw arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>KEP_ArchotechChainsawArm</ThingDef>
+      <HediffDef>KEP_ArchotechChainsawArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech chainsaw arm.</jobString>
+		<workAmount>6000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>KEP_ArchotechChainsawArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>KEP_ArchotechChainsawArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>KEP_ArchotechChainsawArm</addsHediff>
+	</RecipeDef>
+</Defs>
