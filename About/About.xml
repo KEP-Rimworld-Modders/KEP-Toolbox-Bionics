@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>KEP:Archotech Chainsaw Arms</name>
+	<name>KEP:Toolbox Bionics</name>
 	<author>KEP</author>
-    <packageId>KEP.ACA</packageId>
+    <packageId>KEP.TB</packageId>
 	<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
 		<li>1.2</li>
 	</supportedVersions>
-	<description>Archotech chainsaw arms for Rimworld. :| </description>
+	<description>A couple of balanced bionics for Rimworld. :)</description>
 </ModMetaData>
